@@ -1,0 +1,338 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #000;}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+body{
+    font-family: 'NanumBarunGothic';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    background: #ffeedc;
+    min-width:1350px;
+}
+ul, ol{list-style: none;}
+
+/*header line start*/
+#header{background-color: #fee4c0;}
+
+#header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 200px;
+    position: relative;
+}
+
+.list1{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.list1 li{
+    float: left;
+    padding-left: 20px;
+}
+.list1 li a{color: grey; display: block;}
+.list1 li a:hover{
+    color: #000;
+    transition: all 1s;
+}
+
+#header_inner img{
+    position: absolute;
+    top: 36px;
+    left: 594px;
+}
+
+.list2{
+    position: absolute;
+    bottom:0;
+    left: 220px;
+
+}
+
+.list2 li{
+    float: left;
+    padding: 25px 0;
+    width: 220px;
+    text-align: center;
+}
+
+.list2 li a{
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+}
+.list2 li a:hover{
+    color: orangered;
+    transition: all 1s;
+}
+/*header line E*/
+
+/*fixed_btn start*/
+.fixed_btn{
+    width: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    display: block;
+    z-index: 10;
+}
+/*fixed_btn E*/
+
+/*mb start*/
+.mb>img{
+    width: 100%;
+    margin: 0 auto;
+}
+/*mb start E*/
+
+/*chef start*/
+.chef_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 500px;
+}
+.chef_img{
+    width: 266px;
+    height: 300px;
+    float: left;
+    left: 300px;
+    top: 80px;
+}
+
+.chef_text{
+    float: right;
+    width: 550px;
+    padding: 80px 0;
+}
+
+.chef_text h1{
+    color: #f26122;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.chef_text p{
+ padding-top: 30px;
+}
+/*chef E*/
+
+/*fresh start*/
+.fresh_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 1280px;
+}
+
+.fresh_inner h3{
+    color: #f26122;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.fresh_inner p{
+    padding-bottom: 35px;
+    font-size: 18px;
+}
+
+.fresh_inner>h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+    color: #f26122;
+}
+
+.fresh_inner>h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+
+.fresh_box1{
+    width: 1320px;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.box1_1{
+    float: left;
+    width: 770px;
+}
+
+.box1_2{
+    float: right;
+    width: 550px;
+}
+
+.fresh_box2{
+    width: 1320px;
+    height: 450px;
+}
+
+.box2_1{
+    float: left;
+    width: 550px;
+}
+
+.box2_2{
+    float: right;
+    width: 770px;
+    padding-left: 120px ;
+    box-sizing: border-box;
+}
+
+.promise_inner{
+    background: url(img/promise.jpg) no-repeat center top;
+    width: 1320px;
+    height: 544px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro_text{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.pro_text h2{
+    color: #ffdd00;
+    font-size: 30px;
+    padding-bottom: 60px;
+}
+
+.pro_text h1{
+    color: #ff9000;
+    font-size: 30px;
+    padding-bottom: 60px;
+    line-height: 40px;
+}
+
+.pro_text p{
+    font-size: 18px;
+    color: #fff0cb;
+}
+
+.partner_inner{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    height: 250px;
+}
+
+.partner_inner>h1{
+    font-size: 40px;
+    color: #f26122;
+    padding: 50px 0;
+}
+
+.partner_inner>ul>li{
+    float: left;
+    width: 25%;
+}
+
+/*footer start*/
+.footer{
+    background: #ffc67b;
+}
+
+.footer_inner{
+    width: 1320px;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_left{
+    float: left;
+    width: 550px;
+    padding-left: 110px;
+    box-sizing: border-box;
+}
+
+.footer_right{
+    float: right;
+    width: 770px;
+    padding-right: 110px;
+    box-sizing: border-box;
+}
+
+.tou li{
+    float: left;
+    padding: 30px 0 15px;
+    padding-right: 5px;
+}
+
+.tou a{
+    display: block;
+    color: #444;
+}
+
+.tou a:hover{
+    color: #000;
+    transition: all 1s;
+}
+
+.footer_left>h2{
+    clear: both;
+    padding-bottom: 10px;
+}
+
+.footer_left>h1{
+    color: #9d1010;
+    font-size: 33px;
+    padding-bottom: 10px;
+}
+
+.sns li{
+    float: left;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.sns li a img{
+    opacity: 50%;
+}
+
+.sns li a img:hover{
+    opacity: 100%;
+}
+
+.footer_right>p{
+    color: #444;
+    padding-top: 30px;
+}
+
+.footer_inner>img{
+    position: absolute;
+    bottom: 50px;
+    right: 180px;
+}
+/*footer E*/

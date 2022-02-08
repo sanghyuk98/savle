@@ -1,0 +1,318 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #000;}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+body{
+    font-family: 'NanumBarunGothic';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width:1350px;
+}
+ul, ol{list-style: none;}
+
+/*header line start*/
+#header{background-color: #fee4c0;}
+
+#header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 200px;
+    position: relative;
+}
+
+.list1{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.list1 li{
+    float: left;
+    padding-left: 20px;
+}
+.list1 li a{color: grey; display: block;}
+.list1 li a:hover{
+    color: #000;
+    transition: all 1s;
+}
+
+#header_inner img{
+    position: absolute;
+    top: 36px;
+    left: 594px;
+}
+
+.list2{
+    position: absolute;
+    bottom:0;
+    left: 220px;
+
+}
+
+.list2 li{
+    float: left;
+    padding: 25px 0;
+    width: 220px;
+    text-align: center;
+}
+
+.list2 li a{
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+}
+.list2 li a:hover{
+    color: orangered;
+    transition: all 1s;
+}
+/*header line E*/
+
+/*fixed_btn start*/
+.fixed_btn{
+    width: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    display: block;
+    z-index: 10;
+}
+/*fixed_btn E*/
+
+/*notice*/
+.notice>h1{margin:80px 0;
+	text-align:center;
+    color: #f26122;
+    font-size: 40px;
+}
+.notice{width: 1320px;
+	margin:auto;
+	margin-top:30px;}
+.notice_inner{
+    background:#fee3c0;
+}
+
+/*제목부분*/
+.notice .title{overflow:hidden;
+height: 100px; display: flex; position: relative;}
+.notice .number{
+    padding-left: 50px;
+    font-size: 30px;
+    color: #f26122;
+    padding-top: 40px;
+}
+.notice .title_in{
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.notice .plus{
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    margin-top: -12px;
+}
+.notice .text_info{padding:30px 0 30px 200px;
+	background:#fff5e7;
+	display:none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/*+모양 회전관련 속성*/
+.notice .turn{transform:rotate(60deg);}
+.notice .plus{transition:transform 0.5s;}
+.notice .on1{visibility:visible;}
+
+.question_inner{
+    width: 1320px;
+    margin: 100px auto;
+}
+
+.question_inner h1 a{
+    float: left;
+    color: #f26122;
+    font-size: 40px;
+    display: block;
+    margin-left: 480px;
+    padding-bottom: 5px;
+    border-bottom: solid #f26122 3px;
+    margin-bottom: 50px;
+}
+
+.question_inner h2 a{
+    float: right;
+    color: #f26122;
+    font-size: 40px;
+    display: block;
+    margin-right: 480px;
+    margin-bottom: 50px;
+}
+
+.question_list{
+    clear: both;
+    margin-top: 50px;
+}
+
+.question_list{
+    background-color: #fee3c0;
+}
+
+.question .title{overflow:hidden;
+    height: 50px; display: flex; position: relative;}
+    .question .title:hover{
+        background-color: #fff5e7;
+    }
+    .question .left{
+        padding-left: 50px;
+        font-size: 30px;
+        color: #f26122;
+        padding-top: 15px;
+    }
+    .question .center{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-left: 100px;
+        box-sizing: border-box;
+    }
+    .question .right{
+        font-size: 20px;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        margin-top: -12px;
+    }
+
+.question_inner .number{
+    padding-top: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.question_inner .number li{
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.question_inner .first{
+    border-bottom: solid 3px #000;
+}
+
+
+.question_inner .number li:hover{
+    background-color: #ccc;
+}
+
+/*footer start*/
+.footer{
+    background: #ffc67b;
+}
+
+.footer_inner{
+    width: 1320px;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_left{
+    float: left;
+    width: 550px;
+    padding-left: 110px;
+    box-sizing: border-box;
+}
+
+.footer_right{
+    float: right;
+    width: 770px;
+    padding-right: 110px;
+    box-sizing: border-box;
+}
+
+.tou li{
+    float: left;
+    padding: 30px 0 15px;
+    padding-right: 5px;
+}
+
+.tou a{
+    display: block;
+    color: #444;
+}
+
+.tou a:hover{
+    color: #000;
+    transition: all 1s;
+}
+
+.footer_left>h2{
+    clear: both;
+    padding-bottom: 10px;
+}
+
+.footer_left>h1{
+    color: #9d1010;
+    font-size: 33px;
+    padding-bottom: 10px;
+}
+
+.sns li{
+    float: left;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.sns li a img{
+    opacity: 50%;
+}
+
+.sns li a img:hover{
+    opacity: 100%;
+}
+
+.footer_right>p{
+    color: #444;
+    padding-top: 30px;
+}
+
+.footer_inner>img{
+    position: absolute;
+    bottom: 50px;
+    right: 180px;
+}
+/*footer E*/

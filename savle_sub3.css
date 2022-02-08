@@ -1,0 +1,208 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #000;}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+body{
+    font-family: 'NanumBarunGothic';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width:1350px;
+}
+ul, ol{list-style: none;}
+
+/*header line start*/
+#header{background-color: #fee4c0;}
+
+#header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 200px;
+    position: relative;
+}
+
+.list1{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.list1 li{
+    float: left;
+    padding-left: 20px;
+}
+.list1 li a{color: grey; display: block;}
+.list1 li a:hover{
+    color: #000;
+    transition: all 1s;
+}
+
+#header_inner img{
+    position: absolute;
+    top: 36px;
+    left: 594px;
+}
+
+.list2{
+    position: absolute;
+    bottom:0;
+    left: 220px;
+
+}
+
+.list2 li{
+    float: left;
+    padding: 25px 0;
+    width: 220px;
+    text-align: center;
+}
+
+.list2 li a{
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+}
+.list2 li a:hover{
+    color: orangered;
+    transition: all 1s;
+}
+/*header line E*/
+
+/*fixed_btn start*/
+.fixed_btn{
+    width: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    display: block;
+    z-index: 10;
+}
+/*fixed_btn E*/
+
+/*event*/
+.event_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 80px 110px;
+    box-sizing: border-box;
+    height: 1600px;
+}
+
+.event_inner>h1{
+    text-align: center;
+    color: #f26122;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.event_inner>a>img{
+    padding-bottom: 30px;
+}
+
+.event .right{
+    float: right;
+}
+
+/*footer start*/
+.footer{
+    background: #ffc67b;
+}
+
+.footer_inner{
+    width: 1320px;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_left{
+    float: left;
+    width: 550px;
+    padding-left: 110px;
+    box-sizing: border-box;
+}
+
+.footer_right{
+    float: right;
+    width: 770px;
+    padding-right: 110px;
+    box-sizing: border-box;
+}
+
+.tou li{
+    float: left;
+    padding: 30px 0 15px;
+    padding-right: 5px;
+}
+
+.tou a{
+    display: block;
+    color: #444;
+}
+
+.tou a:hover{
+    color: #000;
+    transition: all 1s;
+}
+
+.footer_left>h2{
+    clear: both;
+    padding-bottom: 10px;
+}
+
+.footer_left>h1{
+    color: #9d1010;
+    font-size: 33px;
+    padding-bottom: 10px;
+}
+
+.sns li{
+    float: left;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.sns li a img{
+    opacity: 50%;
+}
+
+.sns li a img:hover{
+    opacity: 100%;
+}
+
+.footer_right>p{
+    color: #444;
+    padding-top: 30px;
+}
+
+.footer_inner>img{
+    position: absolute;
+    bottom: 50px;
+    right: 180px;
+}
+/*footer E*/
