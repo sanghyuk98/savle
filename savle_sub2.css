@@ -153,7 +153,7 @@ ul, ol{list-style: none;}
     padding: 0 55px;
     margin-bottom: 130px;
 }
-.m_b img:hover{
+.m_b>a>img:hover{
     transform: scale(1.05);
     transition: all 1s;
 }
@@ -201,6 +201,19 @@ ul, ol{list-style: none;}
 .icons li{
     float: left;
     padding-left: 5px;
+    position: relative;
+}
+
+.like2 ,.cart2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.icons li:hover a img:nth-child(2){
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 /*footer start*/
